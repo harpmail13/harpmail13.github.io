@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HARPMAIL</title>
+  <style>
+    /* Import the full, continuous variable range of Doto */
+    @import url('https://googleapis.com');
+
+    /* Variable Weight Oscillating Loop */
+    @keyframes weightPulse {
+      0% {
+        font-weight: 100;
+        letter-spacing: -2px;
+      }
+      50% {
+        font-weight: 900;
+        /* Compressing spacing at high weights tightens the dot grid */
+        letter-spacing: -6px; 
+      }
+      100% {
+        font-weight: 100;
+        letter-spacing: -2px;
+      }
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #0d1117 !important; /* Shade 1: Deep Space Black */
+      color: #c9d1d9 !important;            /* Shade 3: Terminal Gray text */
+      font-family: "Doto", sans-serif;
+      font-optical-sizing: auto;
+      font-variation-settings: "ROND" 0;     /* Keeps the dots sharp and square */
+      padding: 40px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* LoveFrom-inspired Minimalist Nav [4.1] */
+    nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand-id {
+      font-weight: 900;
+      font-size: 0.95rem;
+      color: #8b949e; /* Shade 4: Muted Header Gray */
+      letter-spacing: 0.5px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #c9d1d9 !important;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 300; /* Crisp, thin navigation pathing */
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 2px 6px;
+      transition: font-weight 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: #ffffff; /* Shade 5: Stark White Hover */
+      color: #0d1117 !important;  /* High contrast text inversion */
+      font-weight: 900;          /* Inverting weights on user interaction */
+    }
+
+    /* Variable Center Stage Area */
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      padding: 60px 0;
+    }
+
+    .hero-text {
+      font-size: clamp(4rem, 16vw, 13rem); /* Fluid responsive screen tracking */
+      color: #ffffff; 
+      line-height: 0.8;
+      text-transform: uppercase;
+      /* Calls the fluid variable axis transformation over a smooth 6s industrial cycle */
+      animation: weightPulse 6s ease-in-out infinite;
+    }
+
+    footer {
+      font-size: 0.85rem;
+      color: #21262d; /* Shade 2: Industrial Serial Number */
+      font-weight: 100;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Utility [4.1] -->
+  <nav>
+    <div class="brand-id">HARPMAIL //</div>
+    <ul class="nav-links">
+      <li><a href="/1517/">1517_MEDICI</a></li>
+      <li><a href="https://onshape.com" target="_blank">DeRM_CAD</a></li>
+      <li><a href="mailto:harpmail13@gmail.com">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <!-- Variable Axis Hero Landing -->
+  <main>
+    <div class="hero-text">HELLO...</div>
+  </main>
+
+  <footer>
+    VARIABLE_BUILD_v2.0.0
+  </footer>
+
+</body>
+</html>
