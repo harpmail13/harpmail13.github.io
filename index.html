@@ -11,19 +11,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single&display=swap" rel="stylesheet">
 
   <style>
-    /* Hypnotic, buttery smooth weight & scale oscillation loop */
-    @keyframes weightPulse {
+    /* Hypnotic Smooth Shadow & Scale Pulse (Bypasses chunky font-weight steps) */
+    @keyframes hypnoticPulse {
       0% {
-        font-weight: 100;
-        transform: scale(0.98);
+        transform: scale(0.97);
+        text-shadow: 0 0 2px rgba(101, 122, 31, 0.2);
       }
       50% {
-        font-weight: 900;
-        transform: scale(1.02);
+        transform: scale(1.03);
+        text-shadow: 0 0 16px rgba(101, 122, 31, 0.7), 0 0 30px rgba(101, 122, 31, 0.4);
       }
       100% {
-        font-weight: 100;
-        transform: scale(0.98);
+        transform: scale(0.97);
+        text-shadow: 0 0 2px rgba(101, 122, 31, 0.2);
       }
     }
 
@@ -104,10 +104,11 @@
       text-align: center; /* Keeps the fluid typography text box strictly centered */
       line-height: 0.8;
       text-transform: uppercase;
+      font-weight: 400; /* Fixed clean baseline weight */
       
       /* Hypnotic buttery smooth settings */
-      animation: weightPulse 7s cubic-bezier(0.37, 0, 0.63, 1) infinite;
-      will-change: font-weight, transform;
+      animation: hypnoticPulse 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      will-change: transform, text-shadow;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       backface-visibility: hidden;
