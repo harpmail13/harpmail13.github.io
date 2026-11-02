@@ -6,7 +6,7 @@
   <title>Harper's Portfolio</title>
   <style>
     /* Import the full, continuous variable range of Doto */
-    @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+    @import url('https://googleapis.com');
 
     /* Variable Weight Oscillating Loop */
     @keyframes weightPulse {
@@ -32,8 +32,8 @@
     }
 
     body {
-      background-color: #000000 !important; /* Shade 1: Deep Space Black */
-      color: #999999 !important;            /* Shade 3: Terminal Gray text */
+      background-color: #bebc9a !important; /* Updated background color */
+      color: #657a1f !important;            /* Updated text color */
       font-family: "Doto", sans-serif;
       font-optical-sizing: auto;
       font-variation-settings: "ROND" 0;     /* Keeps the dots sharp and square */
@@ -55,7 +55,7 @@
     .brand-id {
       font-weight: 900;
       font-size: 0.95rem;
-      color: #434343; /* Shade 4: Muted Header Gray */
+      color: #657a1f; /* Updated brand color to match main text */
       letter-spacing: 0.5px;
     }
 
@@ -66,7 +66,7 @@
     }
 
     .nav-links a {
-      color: #999999 !important;
+      color: #657a1f !important; /* Updated link text color */
       text-decoration: none;
       font-size: 0.95rem;
       font-weight: 300; /* Crisp, thin navigation pathing */
@@ -77,8 +77,8 @@
     }
 
     .nav-links a:hover {
-      background-color: #ffffff; /* Shade 5: Stark White Hover */
-      color: #0d1117 !important;  /* High contrast text inversion */
+      background-color: #657a1f; /* Inverted: main text color as hover background */
+      color: #bebc9a !important;  /* Inverted: main background color as hover text */
       font-weight: 900;          /* Inverting weights on user interaction */
     }
 
@@ -93,7 +93,7 @@
 
     .hero-text {
       font-size: clamp(4rem, 16vw, 13rem); /* Fluid responsive screen tracking */
-      color: #999999; /* Added missing semicolon here */
+      color: #657a1f; /* Updated hero text color */
       text-align: center; /* Keeps the fluid typography text box strictly centered */
       line-height: 0.8;
       text-transform: uppercase;
@@ -103,7 +103,7 @@
 
     footer {
       font-size: 0.85rem;
-      color: #000000; /* Shade 2: Industrial Serial Number */
+      color: #657a1f; /* Updated footer text color */
       font-weight: 100;
       letter-spacing: 1px;
     }
@@ -115,9 +115,9 @@
   <nav>
     <div class="brand-id"></div>
     <ul class="nav-links">
-      <li><a href="/bio/" >Bio</a></li>
+      <li><a href="/bio/">Bio</a></li>
       <li><a href="/1517/">1517 Medici</a></li>
-      <li><a href="https://harpmail13.github.io/projects/">Projects</a></li>
+      <li><a href="https://github.io">Projects</a></li>
       <li><a href="mailto:harpmail13@gmail.com">CONTACT</a></li>
     </ul>
   </nav>
@@ -133,3 +133,4 @@
 
 </body>
 </html>
+
