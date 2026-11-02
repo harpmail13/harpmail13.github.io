@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Harper's Portfolio</title>
-  <style>
-    /* Import the full, continuous variable range of Doto */
-    @import url('https://googleapis.com');
+  
+  <!-- Explicitly connect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
 
+  <style>
     /* Variable Weight Oscillating Loop */
     @keyframes weightPulse {
       0% {
@@ -32,9 +35,9 @@
     }
 
     body {
-      background-color: #bebc9a !important; /* Updated background color */
-      color: #657a1f !important;            /* Updated text color */
-      font-family: "Doto", sans-serif;
+      background-color: #000000 !important; /* Shade 1: Deep Space Black */
+      color: #999999 !important;            /* Shade 3: Terminal Gray text */
+      font-family: "Doto", monospace, sans-serif;
       font-optical-sizing: auto;
       font-variation-settings: "ROND" 0;     /* Keeps the dots sharp and square */
       padding: 40px;
@@ -44,7 +47,7 @@
       justify-content: space-between;
     }
 
-    /* LoveFrom-inspired Minimalist Nav [4.1] */
+    /* LoveFrom-inspired Minimalist Nav */
     nav {
       width: 100%;
       display: flex;
@@ -55,7 +58,7 @@
     .brand-id {
       font-weight: 900;
       font-size: 0.95rem;
-      color: #657a1f; /* Updated brand color to match main text */
+      color: #434343; /* Shade 4: Muted Header Gray */
       letter-spacing: 0.5px;
     }
 
@@ -66,7 +69,7 @@
     }
 
     .nav-links a {
-      color: #657a1f !important; /* Updated link text color */
+      color: #999999 !important;
       text-decoration: none;
       font-size: 0.95rem;
       font-weight: 300; /* Crisp, thin navigation pathing */
@@ -77,8 +80,8 @@
     }
 
     .nav-links a:hover {
-      background-color: #657a1f; /* Inverted: main text color as hover background */
-      color: #bebc9a !important;  /* Inverted: main background color as hover text */
+      background-color: #ffffff; /* Shade 5: Stark White Hover */
+      color: #0d1117 !important;  /* High contrast text inversion */
       font-weight: 900;          /* Inverting weights on user interaction */
     }
 
@@ -93,7 +96,7 @@
 
     .hero-text {
       font-size: clamp(4rem, 16vw, 13rem); /* Fluid responsive screen tracking */
-      color: #657a1f; /* Updated hero text color */
+      color: #999999;
       text-align: center; /* Keeps the fluid typography text box strictly centered */
       line-height: 0.8;
       text-transform: uppercase;
@@ -103,7 +106,7 @@
 
     footer {
       font-size: 0.85rem;
-      color: #657a1f; /* Updated footer text color */
+      color: #000000; /* Shade 2: Industrial Serial Number */
       font-weight: 100;
       letter-spacing: 1px;
     }
@@ -111,14 +114,14 @@
 </head>
 <body>
 
-  <!-- Top Navigation Utility [4.1] -->
+  <!-- Top Navigation Utility -->
   <nav>
     <div class="brand-id"></div>
     <ul class="nav-links">
       <li><a href="/bio/">Bio</a></li>
       <li><a href="/1517/">1517 Medici</a></li>
-      <li><a href="https://github.io">Projects</a></li>
-      <li><a href="mailto:harpmail13@gmail.com">CONTACT</a></li>
+      <li><a href="https://harpmail13.github.io/projects/">Projects</a></li>
+      <li><a href="mailto:harpmail13@gmail.com">Contact</a></li>
     </ul>
   </nav>
 
@@ -127,9 +130,7 @@
     <div class="hero-text">Welcome</div>
   </main>
 
-  <footer>
-    
-  </footer>
+  <footer></footer>
 
 </body>
 </html>
