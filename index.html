@@ -11,19 +11,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single&display=swap" rel="stylesheet">
 
   <style>
-    /* Silky Smooth Variable Weight Oscillating Loop */
+    /* Hypnotic, buttery smooth weight & scale oscillation loop */
     @keyframes weightPulse {
       0% {
         font-weight: 100;
-        letter-spacing: -2px;
+        transform: scale(0.98);
       }
       50% {
         font-weight: 900;
-        letter-spacing: -6px; 
+        transform: scale(1.02);
       }
       100% {
         font-weight: 100;
-        letter-spacing: -2px;
+        transform: scale(0.98);
       }
     }
 
@@ -43,6 +43,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      overflow-x: hidden;
     }
 
     /* Minimalist Nav with a Filleted (Rounded) Olive Box */
@@ -104,11 +105,13 @@
       line-height: 0.8;
       text-transform: uppercase;
       
-      /* Smooth out animation chunkiness */
-      animation: weightPulse 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-      will-change: font-weight, letter-spacing;
+      /* Hypnotic buttery smooth settings */
+      animation: weightPulse 7s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+      will-change: font-weight, transform;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+      backface-visibility: hidden;
+      transform: translateZ(0);
     }
 
     footer {
