@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Harper's Portfolio</title>
   
-  <!-- Explicit Google Fonts connection for Doto -->
+  <!-- Explicit Google Fonts connection for Bitcount Prop Single -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single&display=swap" rel="stylesheet">
 
   <style>
     /* Variable Weight Oscillating Loop */
@@ -37,9 +37,8 @@
     body {
       background-color: #bebc9a !important; /* Cream background (#bebc9a) */
       color: #657a1f !important;            /* Olive text (#657a1f) */
-      font-family: "Doto", monospace, sans-serif;
+      font-family: "Bitcount Prop Single", monospace, sans-serif;
       font-optical-sizing: auto;
-      font-variation-settings: "ROND" 0;     /* Keeps the dots sharp and square */
       padding: 40px;
       min-height: 100vh;
       display: flex;
@@ -47,7 +46,7 @@
       justify-content: space-between;
     }
 
-    /* Minimalist Nav */
+    /* Minimalist Nav with a Filleted (Rounded) Olive Box */
     nav {
       width: 100%;
       display: flex;
@@ -58,8 +57,14 @@
     .brand-id {
       font-weight: 900;
       font-size: 0.95rem;
-      color: #657a1f; /* Olive accent */
+      color: #657a1f;
       letter-spacing: 0.5px;
+    }
+
+    .nav-box {
+      background-color: #657a1f; /* Olive box background */
+      padding: 10px 20px;
+      border-radius: 12px;     /* Filleted (rounded) corners */
     }
 
     .nav-links {
@@ -69,19 +74,18 @@
     }
 
     .nav-links a {
-      color: #657a1f !important; /* Olive nav links */
+      color: #bebc9a !important; /* Cream text inside the olive box */
       text-decoration: none;
       font-size: 0.95rem;
-      font-weight: 300; /* Crisp, thin navigation pathing */
+      font-weight: 300;
       text-transform: uppercase;
       letter-spacing: 0.5px;
       padding: 2px 6px;
-      transition: font-weight 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+      transition: font-weight 0.2s ease, opacity 0.2s ease;
     }
 
     .nav-links a:hover {
-      background-color: #657a1f; /* Olive hover background */
-      color: #bebc9a !important;   /* Inverts text to cream on hover */
+      opacity: 0.7; /* Subdued hover effect inside the box */
       font-weight: 900;          
     }
 
@@ -114,15 +118,17 @@
 </head>
 <body>
 
-  <!-- Top Navigation Utility -->
+  <!-- Top Navigation Utility with Filleted Olive Box -->
   <nav>
     <div class="brand-id"></div>
-    <ul class="nav-links">
-      <li><a href="/bio/">Bio</a></li>
-      <li><a href="/1517/">1517 Medici</a></li>
-      <li><a href="https://harpmail13.github.io/projects/">Projects</a></li>
-      <li><a href="mailto:harpmail13@gmail.com">Contact</a></li>
-    </ul>
+    <div class="nav-box">
+      <ul class="nav-links">
+        <li><a href="/bio/">Bio</a></li>
+        <li><a href="/1517/">1517 Medici</a></li>
+        <li><a href="https://harpmail13.github.io/projects/">Projects</a></li>
+        <li><a href="mailto:harpmail13@gmail.com">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
   <!-- Variable Axis Hero Landing -->
@@ -130,6 +136,10 @@
     <div class="hero-text">Welcome</div>
   </main>
 
+  <footer></footer>
+
+</body>
+</html>
   <footer></footer>
 
 </body>
