@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single&display=swap" rel="stylesheet">
 
   <style>
-    /* Variable Weight Oscillating Loop */
+    /* Silky Smooth Variable Weight Oscillating Loop */
     @keyframes weightPulse {
       0% {
         font-weight: 100;
@@ -19,7 +19,6 @@
       }
       50% {
         font-weight: 900;
-        /* Compressing spacing at high weights tightens the dot grid */
         letter-spacing: -6px; 
       }
       100% {
@@ -104,8 +103,12 @@
       text-align: center; /* Keeps the fluid typography text box strictly centered */
       line-height: 0.8;
       text-transform: uppercase;
-      /* Calls the fluid variable axis transformation over a smooth 6s industrial cycle */
-      animation: weightPulse 6s ease-in-out infinite;
+      
+      /* Smooth out animation chunkiness */
+      animation: weightPulse 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      will-change: font-weight, letter-spacing;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
     footer {
@@ -136,10 +139,6 @@
     <div class="hero-text">Welcome</div>
   </main>
 
-  <footer></footer>
-
-</body>
-</html>
   <footer></footer>
 
 </body>
