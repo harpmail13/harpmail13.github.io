@@ -87,12 +87,14 @@
       flex: 1;
       display: flex;
       align-items: center;
+      justify-content: center; /* Centered horizontally */
       padding: 60px 0;
     }
 
     .hero-text {
       font-size: clamp(4rem, 16vw, 13rem); /* Fluid responsive screen tracking */
-      color: #999999 
+      color: #999999; /* Added missing semicolon here */
+      text-align: center; /* Keeps the fluid typography text box strictly centered */
       line-height: 0.8;
       text-transform: uppercase;
       /* Calls the fluid variable axis transformation over a smooth 6s industrial cycle */
